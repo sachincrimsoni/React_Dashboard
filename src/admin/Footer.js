@@ -1,9 +1,9 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-const Admin_footer = () => {
+const Adminfooter = () => {
     return(
-        <Card body className="website-footer">Website Footer Text</Card>
+        <Card body className="website-footer">Admin Footer</Card>
     )
 }
-export default Admin_footer;
+export default Adminfooter;
