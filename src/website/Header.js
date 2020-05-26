@@ -1,20 +1,24 @@
 import React from 'react'
-import { Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 const Header = () => {
     return(
         <div className="website-header">
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
-                <Navbar.Brand href="#home">Website Logo</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/">Website Logo</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Link to="/" className="nav-link" role="button">Home</Link>
-                        <Link to="/about" className="nav-link" role="button">About Us</Link>
-                        <Link to="/services" className="nav-link" role="button">Our Services</Link>
-                        <Link to="/userdata" className="nav-link" role="button">User Table</Link>
-                        <Link to="/contact" className="nav-link" role="button">Contact Us</Link>
+                        <Nav.Link as={Link} to="/">Home</Nav.Link>
+                        <NavDropdown title="Our Services" id="basic-nav-dropdown">
+                            <NavDropdown.Item as={Link} to="/service">Our Service 1</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/service">Our Service 2</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/service">Our Service 3</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+                        <Nav.Link as={Link} to="/userdata">User Table</Nav.Link>
+                        <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
