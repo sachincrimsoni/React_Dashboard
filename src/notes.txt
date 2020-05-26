@@ -1,0 +1,10 @@
+//To run the project please do the below things
+
+//install react router dom
+npm install --save react-router-dom
+
+//install sass for the project 
+npm install node-sass
+
+//install react bootstrap 
+npm install react-bootstrap bootstrap
