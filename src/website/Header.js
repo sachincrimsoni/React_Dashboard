@@ -20,6 +20,9 @@ const Header = () => {
                         <Nav.Link as={Link} to="/userdata">User Table</Nav.Link>
                         <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
                     </Nav>
+                    <Nav>
+                        <Nav.Link href="/admin">Admin Dashboard</Nav.Link>
+                    </Nav>
                 </Navbar.Collapse>
             </Navbar>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-const Admin_home = () => {
+const Adminhome = () => {
     return(
         <div>
             <Card className="cardcontainer">
@@ -12,4 +12,4 @@ const Admin_home = () => {
         </div>
     )
 }
-export default Admin_home;
+export default Adminhome;
